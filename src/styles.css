@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* google font url */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url(https://db.onlinewebfonts.com/c/2090551770be22b09600a40b0b4673b7?family=Avenir-Medium);
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+*{
+  margin: 0;
+  /* font-family: 'Roboto'; */
+  font-size: 18px;
+  font-family: 'Avenir', sans-serif;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

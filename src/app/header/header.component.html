@@ -1,0 +1,82 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="../../assets/logo main/logomain.jpg" alt="" class="d-inline-block" />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="aboutUsDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            About Us
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+            <li>
+              <a class="dropdown-item" routerLink="about-Us">About Company</a>
+            </li>
+            <hr class="dropdown-divider">
+            <li><a class="dropdown-item" routerLink="awads">Awards</a></li>
+            <hr class="dropdown-divider">
+            <li>
+              <a class="dropdown-item" routerLink="certificates">Certficates</a>
+            </li>
+            <hr class="dropdown-divider">
+            <li>
+              <a class="dropdown-item" (click)="downloadPdfFile()">Download</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="productDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Product
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="productDropdown">
+            <li>
+              <a class="dropdown-item" routerLink="Nanocrystalline">Nano Crystalline</a>
+            </li>
+            <hr class="dropdown-divider">
+            <li>
+              <a class="dropdown-item" routerLink="Electricalsteel">(CRGO) Cold Electrical steel</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="Client">Clients</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contact us">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
