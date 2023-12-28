@@ -479,13 +479,13 @@ body {
     font-size: 0.7em !important;
   }
   p.other {
-    font-size: 0.7em !important;
+    font-size: 0.4em !important;
   }
   .table {
     margin-left: -10px;
   }
   .head {
-    font-size: 23px;
+    font-size: 20px;
   }
   .close {
     background-color: #070707;

@@ -1,17 +1,5 @@
-.about-me{
-  background-color: #f3f4f6;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.orange {
-  color: #ff7a01;
-}
-
 .montserrat {
-  font-family: "Montserrat", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 img {
@@ -26,17 +14,20 @@ img {
 
 
 }
+
 @media (min-width: 1200px) and (max-width: 1441px) {
   .container {
     max-width: 1250px;
     padding: 0px 36px;
   }
 }
+
 @media (max-width: 767px) {
   .container {
     padding: 0px 30px;
   }
 }
+
 @media (max-width: 479px) {
   .container {
     padding: 0px 30px 0px 20px;
@@ -47,9 +38,11 @@ img {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
 .about-me .about-me-container {
   position: relative;
 }
+
 @media (max-width: 960px) {
   .about-me .about-me-container {
     padding-bottom: 100px;
@@ -61,6 +54,7 @@ img {
   color: #101111;
   font-weight: 700;
 }
+
 @media (max-width: 500px) {
   .about-me .about-me-container .about-me-title {
     font-size: 30px;
@@ -78,6 +72,7 @@ img {
   display: flex;
   justify-content: space-between;
 }
+
 @media (max-width: 960px) {
   .about-me-flex-container {
     flex-direction: column;
@@ -87,16 +82,19 @@ img {
     gap: 50px;
   }
 }
+
 @media (max-width: 500px) {
   .about-me-flex-container {
     margin-top: -10px;
   }
 }
+
 .about-me-flex-container .about-me-image {
   position: relative;
   width: 400px;
   height: 400px;
 }
+
 @media (max-width: 500px) {
   .about-me-flex-container .about-me-image {
     width: 300px;
@@ -104,28 +102,28 @@ img {
     margin-left: -85px;
   }
 }
+
 .about-me-flex-container .about-me-image .back-div {
   position: absolute;
-  bottom: 0;
-  /* z-index: -1; */
-  background-color: #be4f76;
+  bottom: 79;
   width: 99%;
-  height: 90%;
+  height: 68%;
 }
 
 .about-me-flex-container .about-me-image .black-image {
-  /* z-index: -2; */
   position: absolute;
   left: 0 9px;
   bottom: 10px;
   height: 100%;
 }
+
 .about-me-flex-container .about-me-image .black-image img {
   height: 100%;
 }
+
 .about-me-flex-container .about-me-image .main-image {
-  width: 130%;
-  height: 70%;
+  width: 100%;
+  height: 68%;
   overflow: hidden;
   position: absolute;
   left: 18%;
@@ -159,27 +157,33 @@ img {
   gap: 50px;
   flex: 0 0 40%;
 }
+
 @media (max-width: 960px) {
   .about-me-flex-container .about-me-content {
     flex-direction: column;
   }
 }
+
 .about-me-flex-container .about-me-content .logo {
   max-width: 200px;
 }
+
 .about-me-flex-container .about-me-content .logo img {
   filter: drop-shadow(0 0 25px rgb(0, 0, 0));
 }
+
 @media (max-width: 500px) {
   .about-me-flex-container .about-me-content .logo img {
     transform: rotateZ(90deg);
   }
 }
+
 .about-me-flex-container .about-me-content .text {
   color: #0d0d0e;
   font-weight: 600;
   font-size: 18px;
 }
+
 @media (max-width: 500px) {
   .about-me-flex-container .about-me-content .text {
     font-size: 16px;
@@ -196,9 +200,11 @@ img {
   align-items: center;
   transition: all 0.2s ease-out;
 }
+
 .mail-button a {
   display: flex;
 }
+
 .mail-button img {
   -o-object-fit: contain;
   object-fit: contain;
@@ -212,14 +218,16 @@ img {
   left: 0;
   border: 10px solid #be4f76;
 }
+
 .mail-button2 img {
-  filter: invert(56%) sepia(42%) saturate(4795%) hue-rotate(360deg)
-    brightness(103%) contrast(105%);
+  filter: invert(56%) sepia(42%) saturate(4795%) hue-rotate(360deg) brightness(103%) contrast(105%);
 }
+
 .mail-button2:hover {
   background-color: #ff7a01;
   border: 10px solid #ff7a01;
 }
+
 .mail-button2:hover img {
   filter: unset;
   transform: scale(1.5);
@@ -230,6 +238,7 @@ img {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .portfolio-link a {
   text-decoration: none;
   color: white;
@@ -243,9 +252,11 @@ img {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-2.3rem);
   }
+
   100% {
     transform: translateY(0);
   }
