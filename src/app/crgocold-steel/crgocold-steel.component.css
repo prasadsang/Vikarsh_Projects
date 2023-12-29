@@ -33,11 +33,13 @@
   max-width: 950px;
   width: 100%;
   margin: 0 auto;
+ 
 }
 
 .heading h1 {
-  margin-bottom: 1em;
+  /* margin-bottom: 1em; */
   color: #131212;
+  font-size: 20px;
 }
 .titles {
   font-family: "Avenir", sans-serif;
@@ -46,7 +48,7 @@ h3 {
   font-family: "Avenir", sans-serif;
 }
 p {
-  font-size: 0.8em;
+  font-size: 0.2em;
   font-family: "Avenir", sans-serif;
 }
 .figure {
