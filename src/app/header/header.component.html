@@ -1,17 +1,20 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
   <div class="container">
-    <a class="navbar-brand" href="#"><img src="../../assets/logo main/logomain.jpg" alt=""></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#"><img
+        src="https://5.imimg.com/data5/SELLER/Logo/2023/5/308732809/KK/MH/FM/679987/logo-90x90.jpg"
+        dataimg="https://5.imimg.com/data5/SELLER/Logo/2023/5/308732809/KK/MH/FM/679987/logo-90x90.jpg"
+        alt="Vikarsh Nano Technology And Alloys Private Limited" class="imgCenter"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse  navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav ">
-        <li class="nav-item" >
-          <a class="nav-link" aria-current="page"  routerLink="">Home</a>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="">Home</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="aboutUsDropdown" role="button" data-bs-toggle="dropdown"
+          <a class="nav-link dropdown-toggle" href="about-me" id="aboutUsDropdown" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">
             About Us
           </a>
@@ -19,30 +22,30 @@
             <li>
               <a class="dropdown-item" [routerLinkActive]="['active']" routerLink="about-Us">About Company</a>
             </li>
-          
+
             <li><a class="dropdown-item" [routerLinkActive]="['active']" routerLink="awads">Awards</a></li>
-           
+
             <li>
-              <a class="dropdown-item"[routerLinkActive]="['active']" routerLink="certificates">Certficates</a>
+              <a class="dropdown-item" [routerLinkActive]="['active']" routerLink="certificates">Certficates</a>
             </li>
-         
+
             <li>
               <a class="dropdown-item" [routerLinkActive]="['active']" (click)="downloadPdfFile()">Download</a>
             </li>
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" [routerLinkActive]="['active']" href="#" id="productDropdown" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
+          <a class="nav-link dropdown-toggle" [routerLinkActive]="['active']" href="#" id="productDropdown"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Product
           </a>
           <ul class="dropdown-menu" aria-labelledby="productDropdown">
             <li>
-              <a class="dropdown-item" [routerLinkActive]="['active']" routerLink="Nanocrystalline">Nano Crystalline</a>
+              <a class="dropdown-item" routerLink="Nanocrystalline">Nano Crystalline</a>
             </li>
-   
+
             <li>
-              <a class="dropdown-item" [routerLinkActive]="['active']" routerLink="Electricalsteel">(CRGO) Cold Electrical steel</a>
+              <a class="dropdown-item" routerLink="Electricalsteel">(CRGO) Cold Electrical steel</a>
             </li>
           </ul>
         </li>

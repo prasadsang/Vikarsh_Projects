@@ -47,9 +47,10 @@
 }
 h3 {
   font-family: "Avenir", sans-serif;
+  font-size: 20px;
 }
 p {
-  font-size: 0.8em;
+  font-size: 0.2em;
   font-family: "Avenir", sans-serif;
 }
 .figure {
@@ -125,7 +126,7 @@ p {
 
 .section-6 .figure h3 {
   margin: 0 0 5px;
-  font-weight: 700;
+
   text-transform: uppercase;
 }
 
@@ -615,14 +616,12 @@ td {
     display: inline-block;
 
   }
-  .btn-primary {
-    position: absolute;
-    display: inline-block;
+  
+.btn-primary {
 
-    display: block;
-    border-radius: 50%;
-    box-shadow: 0px 10px rgb(199, 199, 199);
-  }
+  width: 30%;
+}
+  
 }
 .content-two {
   padding: 20px 20px;
@@ -638,7 +637,7 @@ td {
  width: 20%;
   background: linear-gradient(-45deg, #50d4ac, #070707);
   border-radius: 20px;
-justify-items: end;
+/* justify-items: end; */
 }
 /*  */
 .dark-modal .modal-content {

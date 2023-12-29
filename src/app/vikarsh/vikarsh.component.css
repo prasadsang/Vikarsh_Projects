@@ -454,12 +454,13 @@ img {
 }
 
 .about-us-btn {
-  padding: 10px 30px;
+  padding: 10px 80px;
   background: linear-gradient(-45deg, #50d4ac, #070707);
   border-radius: 20px;
   font-weight: 100;
   color: #fff;
   margin-left: 90px;
+  box-shadow: 10px 10px 10px rgb(124, 120, 120);
 }
 
 .about-me-btn:hover {

@@ -67,6 +67,7 @@ ul {
   border-bottom-right-radius: 4px;
 }
 
+
 /* ---- */
 /* FORM */
 /* ---- */
@@ -85,7 +86,7 @@ ul {
   margin: 0;
 }
 
-.input {}
+
 
 .contact form .full {
   grid-column: 1 / 3;

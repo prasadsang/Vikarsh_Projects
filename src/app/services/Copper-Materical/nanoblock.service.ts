@@ -36,7 +36,7 @@ export class NanoblockService {
     link.href = pdfUrl2;
 
     // Specify the filename for the downloaded file
-    link.download = 'VIKARSH NANO_CRGO_Brochure.pdf';
+    link.download = 'VIKARSH NANO_Brochure.pdf';
     // Append the link to the body
     document.body.appendChild(link);
 

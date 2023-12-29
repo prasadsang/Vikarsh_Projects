@@ -14,9 +14,12 @@ export class CrgocoldSteelComponent {
   isContentOneVisible: boolean = true;
   constructor(private Ns:CrgocoldsteeService ) {}
   ngOnInit(): void {
-    this.Nanoblocks = this.Ns.getAll();
+
   }
 
+  downloadPdfFile() {
+    this.Ns.mainPdf();
+  }
   // openModal() {
   //   ('#myModal').modal('show');
   // }
@@ -31,4 +34,7 @@ export class CrgocoldSteelComponent {
   toggleCollapse() {
     this.isCollapsed = !this.isCollapsed;
   }
+ 
+ 
+
 }

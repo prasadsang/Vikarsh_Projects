@@ -1,11 +1,11 @@
 .navbar {
   box-shadow: 0px 15px 10px 0px #aaa;
   background: linear-gradient(-45deg, #50d4ac, #070707);
- 
+
 }
 
 .navbar-container {
-display: block;
+  display: block;
 }
 
 
@@ -45,13 +45,17 @@ display: block;
 .navbar .dropdown-item {
   color: #070707;
 }
+
 @media screen and (max-width: 768px) {
-.navbar{
-  padding: 20px;
+  .navbar {
+    padding: 20px;
+  }
+
+  .navbar a {
+    text-align: center;
+  }
 }
-.navbar a {
-text-align: center;
+
+a:active {
+  color: #62be4f;
 }
-}
-a:active{
-  color: #62be4f;}
