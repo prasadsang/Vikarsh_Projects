@@ -3,6 +3,7 @@
   width: 100%;
   overflow: hidden;
 }
+
 .photobanner {
   position: relative;
   height: 233px;
@@ -13,7 +14,7 @@
 
 .photobanner img {
   padding: 20px 20px;
-  width:30%;
+  width: 30%;
   border-image-outset: 1px black;
   border-radius: 20px;
   margin: 0px 25px;
@@ -23,39 +24,50 @@
 .photobanner {
   animation: bannermove 50s linear infinite alternate-reverse;
 }
+
 @media (max-width: 500px) {
+
   /* brand */
-.wrapper {
-  width: 100%;
-  overflow: hidden;
-}
-.photobanner {
-  position: relative;
-  height: 233px;
-  margin-bottom: 30px;
-  display: flex;
-  width: 300%;
-}
+  .wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
 
-.photobanner img {
-  padding: 20px 20px;
-  width:30%;
-  border-image-outset: 1px black;
-  border-radius: 20px;
-  margin: 0px 25px;
-  box-shadow: 2px 2px 8px #8a8a8a;
-}
+  .photobanner {
+    position: relative;
+    height: 233px;
+    margin-bottom: 30px;
+    display: flex;
+    width: 300%;
+  }
 
-.photobanner {
-  animation: bannermove 50s linear infinite alternate-reverse;
-}
+  .photobanner img {
+    padding: 20px 20px;
+    width: 30%;
+    border-image-outset: 1px black;
+    border-radius: 20px;
+    margin: 0px 25px;
+    box-shadow: 2px 2px 8px #8a8a8a;
+  }
+
+  .photobanner {
+    animation: bannermove 50s linear infinite alternate-reverse;
+  }
 }
 
 @keyframes bannermove {
   from {
     left: 0px;
   }
+
   to {
     left: -4900px;
   }
+}
+
+.heading-client {
+  text-align: center;
+  font-size: 55px;
+  color: #101111;
+  font-family: 'Avenir', sans-serif;
 }

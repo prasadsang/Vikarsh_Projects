@@ -99,6 +99,11 @@ h1.heading {
     max-width: 80%; 
   }
 } */
+.hrading {
+  font-size: 55px;
+  color: #101111;
+  font-family: 'Avenir', sans-serif;
+}
 
 .card {
   border: none;

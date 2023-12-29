@@ -1,12 +1,18 @@
+
+.awards{
+  background-color: #fcf1f8;
+  margin-top: 77px;
+
+}
 .car {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #f5f5f5;
+
 }
 .main-heading {
-  padding: 89px 20px;
+
   text-align: center;
 }
 

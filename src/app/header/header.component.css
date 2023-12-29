@@ -49,4 +49,9 @@ display: block;
 .navbar{
   padding: 20px;
 }
+.navbar a {
+text-align: center;
 }
+}
+a:active{
+  color: #62be4f;}

@@ -1,3 +1,7 @@
+.about-me {
+  background-color: #fcf1f8;
+
+}
 .montserrat {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -52,7 +56,7 @@ img {
 .about-me .about-me-container .about-me-title {
   font-size: 55px;
   color: #101111;
-  font-weight: 700;
+
 }
 
 @media (max-width: 500px) {

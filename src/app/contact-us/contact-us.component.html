@@ -1,14 +1,12 @@
 <section class="main-body">
   <div class="container">
-    <h1 class="brand"><span>Contact Us</span></h1>
-
     <div class="wrapper">
       <!-- COMPANY INFORMATION -->
       <div class="company-info">
         <h3>
           Vikarsh Nano Technology & Alloys Pvt. Ltd.
         </h3>
-        <hr />
+        <hr style="  color: #ffffff;"/>
 
         <ul>
           <li>
@@ -21,13 +19,12 @@
           <br />
           <li><i class="far fa-solid fa-globe-americas"></i>www.vikarsh.com</li>
           <br />
-
           <li><i class="fa fa-envelope"></i> vikarshnano@gmail.com</li>
-          <br />
-        </ul><hr>
+        </ul>
+        <hr style="  color: #ffffff;"/>
         <div class="hero">
           <h1>Follow us on Social Media:</h1>
-            <br>
+          <br>
           <div class="social-links">
             <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
 
@@ -41,36 +38,39 @@
 
       <!-- CONTACT FORM -->
       <div class="contact">
-        <h3>E-mail Us</h3>
+        <h3 class="text-center">Contact Us</h3><hr>
 
         <form id="contact-form">
           <p>
             <label>Name</label>
-            <input type="text" name="name" id="name" required />
+            <input type="text" required maxlength="49" class="form-control" id="first_name" name="first_name">
           </p>
 
           <p>
             <label>Company</label>
-            <input type="text" name="company" id="company" />
+            <input type="text" required maxlength="49" class="form-control" id="Company_name" name="last_name">
+          </p>
+
+          <p class="email">
+            <label for="email_addr">Email address</label>
+            <input type="email" required maxlength="49" class="form-control" id="email_addr" name="email"
+            placeholder="name@example.com">
           </p>
 
           <p>
-            <label>E-mail Address</label>
-            <input type="email" name="email" id="email" required />
-          </p>
+            <label for="phone_input">Phone</label>
           
-          <p>
-            <label>Phone Number</label>
-            <ngx-intl-tel-input [preferredCountries]="['in', 'gb']" [enablePlaceholder]="true" style="font-size: 30px;"></ngx-intl-tel-input>
+            <ngx-intl-tel-input class="input" [preferredCountries]="['in', 'gb']" type="Number" required maxlength="50"
+            ></ngx-intl-tel-input>
           </p>
 
           <p class="full">
-            <label>Message</label>
-            <textarea name="message" rows="5" id="message"></textarea>
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5"></textarea>
           </p>
 
           <p class="full">
-            <button type="submit">Submit</button>
+            <button type="submit" class="btn btn-primary px-10 btn-lg">Post</button>
           </p>
         </form>
         <!-- End #contact-form -->
@@ -82,14 +82,6 @@
   <!-- End .container -->
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d6315.293075717857!2d73.850467!3d18.516946!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDMwJzU5LjMiTiA3M8KwNTAnNTYuOCJF!5e1!3m2!1sen!2sin!4v1701163614852!5m2!1sen!2sin"
-    width="100%"
-    height="450"
-    frameborder="0"
-    style="border: 0"
-    allowfullscreen=""
-    aria-hidden="false"
-    tabindex="0"
-  ></iframe>
+    width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false"
+    tabindex="0"></iframe>
 </section>
-
-

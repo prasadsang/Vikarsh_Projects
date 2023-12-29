@@ -7,8 +7,8 @@
     </button>
     <div class="collapse  navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav ">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" routerLink="">Home</a>
+        <li class="nav-item" >
+          <a class="nav-link" aria-current="page"  routerLink="">Home</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="aboutUsDropdown" role="button" data-bs-toggle="dropdown"
@@ -17,43 +17,43 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="aboutUsDropdown">
             <li>
-              <a class="dropdown-item" routerLink="about-Us">About Company</a>
+              <a class="dropdown-item" [routerLinkActive]="['active']" routerLink="about-Us">About Company</a>
             </li>
-            <hr class="dropdown-divider">
-            <li><a class="dropdown-item" routerLink="awads">Awards</a></li>
-            <hr class="dropdown-divider">
+          
+            <li><a class="dropdown-item" [routerLinkActive]="['active']" routerLink="awads">Awards</a></li>
+           
             <li>
-              <a class="dropdown-item" routerLink="certificates">Certficates</a>
+              <a class="dropdown-item"[routerLinkActive]="['active']" routerLink="certificates">Certficates</a>
             </li>
-            <hr class="dropdown-divider">
+         
             <li>
-              <a class="dropdown-item" (click)="downloadPdfFile()">Download</a>
+              <a class="dropdown-item" [routerLinkActive]="['active']" (click)="downloadPdfFile()">Download</a>
             </li>
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="productDropdown" role="button" data-bs-toggle="dropdown"
+          <a class="nav-link dropdown-toggle" [routerLinkActive]="['active']" href="#" id="productDropdown" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">
             Product
           </a>
           <ul class="dropdown-menu" aria-labelledby="productDropdown">
             <li>
-              <a class="dropdown-item" routerLink="Nanocrystalline">Nano Crystalline</a>
+              <a class="dropdown-item" [routerLinkActive]="['active']" routerLink="Nanocrystalline">Nano Crystalline</a>
             </li>
-            <hr class="dropdown-divider">
+   
             <li>
-              <a class="dropdown-item" routerLink="Electricalsteel">(CRGO) Cold Electrical steel</a>
+              <a class="dropdown-item" [routerLinkActive]="['active']" routerLink="Electricalsteel">(CRGO) Cold Electrical steel</a>
             </li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="Client">Clients</a>
+          <a class="nav-link" [routerLinkActive]="['active']" routerLink="Client">Clients</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="gallery">Gallery</a>
+          <a class="nav-link" [routerLinkActive]="['active']" routerLink="gallery">Gallery</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="contact us">Contact Us</a>
+          <a class="nav-link" [routerLinkActive]="['active']" routerLink="contact us">Contact Us</a>
         </li>
       </ul>
     </div>

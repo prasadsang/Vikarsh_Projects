@@ -245,8 +245,9 @@ img {
 .about-me .about-me-container .about-me-title {
   font-size: 55px;
   color: #101111;
-  font-weight: 700;
+
   text-align: center;
+  font-family: 'Avenir', sans-serif;
 }
 
 @media (max-width: 500px) {
@@ -256,6 +257,7 @@ img {
     justify-content: center;
     align-items: center;
     margin-top: 80px;
+    font-family: 'Avenir', sans-serif;
   }
 }
 
