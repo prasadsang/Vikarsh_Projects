@@ -136,21 +136,7 @@ img {
   background-position: center;
 }
 
-/* .about-me-flex-container .about-me-image .main-image:hover {
-  transform-origin: top center;
-  transform: scale(1.5);
-  border-radius: 25px;
-} */
-/* .about-me-flex-container .about-me-image .main-image img {
-  transform-origin: center center;
-  transform: scale(2);
-  -o-object-fit: cover;
-  object-fit: cover;
-  transition: all 0.2s ease-out;
-}
-.about-me-flex-container .about-me-image .main-image img:hover {
-  transform: scale(1);
-} */
+
 .about-me-flex-container .about-me-content {
   display: flex;
   flex-direction: column;
@@ -271,45 +257,13 @@ img {
   animation: animate 5s linear infinite;
 }
 
-/* @keyframes animate {
-  0%,
-  18%,
-  20%,
-  50.15%,
-  65.1%,
-  80%,
-  90.1%,
-  92% {
-    color: #83b9f0;
-    text-shadow: none;
-  }
 
-  18.1%,
-  20.1%,
-  30%,
-  50%,
-  60.1%,
-  65%,
-  80.1%,
-  90%,
-  92.1%,
-  100% {
-    color: #fff;
-    text-shadow: 0 0 10px #83b9f0, 0 0 20px #83b9f0, 0 0 40px rgb(253, 253, 153),
-      0 0 80px rgb(253, 253, 153), 0 0 10px #045ab0;
-  }
-} */
 
 .show-less {
   height: 4rem;
   overflow: hidden;
   padding: 1rem;
 }
-
-
-
-
-
 .jumbotron {
   margin-top: 37px;
 	color:#005858;

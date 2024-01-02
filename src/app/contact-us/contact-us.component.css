@@ -220,7 +220,7 @@ ul {
   left: 0;
   background: #ffffff;
   /* background: linear-gradient(-45deg, #be4f76, #50d4ac); */
-  background-color: #3bb892;
+  background: linear-gradient(-45deg,  #a5ffe4 ,#be4f76);
   position: absolute;
   transition: 0.5s;
 }

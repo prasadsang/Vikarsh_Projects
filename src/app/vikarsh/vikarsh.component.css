@@ -1,6 +1,3 @@
-/**************************** banner start****************** */
-
-
 #slider {
   overflow: hidden;
 
@@ -71,12 +68,10 @@ opacity: 0.5;
 }
 
 /* Responsive styles */
-
-
 .item {
   width: 100%;
   height: 300px;
-  /* Adjust the height as needed */
+  
   background-size: cover;
 }
 
@@ -92,7 +87,6 @@ opacity: 0.5;
 .col-lg-7 {
   width: 100%;
   max-width: 600px;
-  /* Adjust the max-width as needed */
   margin: 0 auto;
 }
 
@@ -182,8 +176,7 @@ opacity: 0.5;
   border-color: #ff4000;
 }
 
-/* about us */
-/* Add or update the following styles in your CSS */
+
 .about-me {
   background-color:  #e2f5ee;
 
@@ -201,13 +194,11 @@ img {
   -o-object-fit: cover;
   object-fit: cover;
 }
-
 .container {
   max-width: 1100px;
-  /* margin: 20px auto 2px auto; */
+ 
 
 }
-
 @media (min-width: 1200px) and (max-width: 1441px) {
   .container {
     max-width: 1250px;
@@ -469,50 +460,9 @@ img {
 .about-text{
   font-family: 'Avenir', sans-serif;
 }
-/* @keyframes animate {
-  0%,
-  18%,
-  20%,
-  50.15%,
-  65.1%,
-  80%,
-  90.1%,
-  92% {
-    color: #83b9f0;
-    text-shadow: none;
-  }
-
-  18.1%,
-  20.1%,
-  30%,
-  50%,
-  60.1%,
-  65%,
-  80.1%,
-  90%,
-  92.1%,
-  100% {
-    color: #fff;
-    text-shadow: 0 0 10px #83b9f0, 0 0 20px #83b9f0, 0 0 40px rgb(253, 253, 153),
-      0 0 80px rgb(253, 253, 153), 0 0 10px #045ab0;
-  }
-} */
-
 .show-less {
   height: 4rem;
   overflow: hidden;
   padding: 1rem;
 }
 
-/* product */
-
-/* PRODUCT DETAILS */
-
-/* @keyframes annermove {
-  from {
-    left: 0px;
-  }
-  to {
-    left: -2900px;
-  }
-} */

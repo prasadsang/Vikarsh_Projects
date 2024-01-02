@@ -30,6 +30,7 @@ const routes: Routes = [
   { path: 'contact-Us', component: ContactComponent },
   { path: 'metrialproper', component: MaterialPropertiesComponent },
   { path: 'Client', component: ClientComponent },
+  {path:'comp',component:ContactComponent}
 ];
 
 @NgModule({

@@ -4,7 +4,7 @@ ul {
 }
 .footer-section {
   /* background: #e6e0e0; */
-  background: #8ad3b9;
+  background: linear-gradient(-45deg,  #4ae0b3 ,#202020);
 
   position: relative;
 }
@@ -100,7 +100,7 @@ ul {
   height: 2px;
   width: 50px;
   /* background: #be4f76; */
-  background: linear-gradient(-45deg,  #3bb892 ,#070707);
+  background: linear-gradient(-45deg,  #a5ffe4 ,#131816);
   font-family: 'Avenir', sans-serif;
 }
 .footer-widget ul li {
@@ -212,7 +212,7 @@ iframe {
   top: -90px;
   left: 0;
   background: #fffdfd;
-  background: linear-gradient(-45deg,  #3bb892 ,#070707);
+  background: linear-gradient(-45deg,  #a5ffe4 ,#be4f76);
   position: absolute;
   transition: 0.5s;
 }
