@@ -219,7 +219,8 @@ ul {
   top: -90px;
   left: 0;
   background: #ffffff;
-  background: linear-gradient(-45deg, #be4f76, #50d4ac);
+  /* background: linear-gradient(-45deg, #be4f76, #50d4ac); */
+  background-color: #3bb892;
   position: absolute;
   transition: 0.5s;
 }

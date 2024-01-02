@@ -1,21 +1,13 @@
-.container-fluid{
-  background-color: #fff4fa;
-}
+
 .section-6 {
   text-align: center;
   padding-top: 130px;
 }
 
-.header {
-  width: 960px;
-  margin: 1em auto;
-  text-align: center;
-  border-bottom: 2px solid rgba(29, 29, 29, 0.6);
-  padding: 1em;
-}
+
 
 .header h1 {
-  margin-bottom: 0.25em;
+
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Avenir", sans-serif;
@@ -343,7 +335,7 @@ span {
 }
 
 .modal-content {
-  background-color: #fcf1f8;
+  background: #dcf0e9;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
 }
@@ -627,7 +619,7 @@ td {
   padding: 20px 20px;
   display: flex;
   justify-content: space-between;
-  background: #fbeceb;
+  background: #dcf0e9;
   border-top-left-radius: 10%;
   border-bottom-right-radius: 10%;
 }
@@ -682,3 +674,12 @@ td {
   justify-content: center;
   width: 120px;
 } */
+
+.jumbotron {
+  margin-top: -40px;
+	color:#005858;
+	background:#eafaea;
+  padding: 1rem 2rem ;
+  text-align: center;
+ 
+}

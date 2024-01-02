@@ -1,6 +1,6 @@
 
 .awards{
-  background-color: #fcf1f8;
+
   margin-top: 77px;
 
 }
@@ -184,4 +184,16 @@
   color: #fff;
   text-align: center;
   background-color: #50d4ac;
+}
+
+.jumbotron {
+  margin-top: 90px;
+	color:#005858;
+	background:#eafaea;
+  padding: 1rem 2rem ;
+  text-align: center;
+  
+}
+i{
+  font-size: 60px;
 }

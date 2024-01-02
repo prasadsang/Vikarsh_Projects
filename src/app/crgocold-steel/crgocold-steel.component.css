@@ -1,6 +1,4 @@
-.container-fluid {
-  background-color: #f7ebf2;
-}
+
 
 .section-6 {
   text-align: center;
@@ -352,7 +350,7 @@ span {
 
 .modal-content {
 
-  background-color: #fff4fa;
+  background: #dcf0e9;
 
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -709,3 +707,10 @@ td {
   justify-content: center;
   width: 120px;
 } */
+.jumbotron {
+  margin-top: -40px;
+	color:#005858;
+	background:#eafaea;
+  padding: 1rem 2rem ;
+  text-align: center;
+}

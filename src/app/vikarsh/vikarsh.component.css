@@ -185,7 +185,7 @@ opacity: 0.5;
 /* about us */
 /* Add or update the following styles in your CSS */
 .about-me {
-  background-color: #fcf1f8;
+  background-color:  #e2f5ee;
 
 }
 .companybrand-name{
@@ -466,7 +466,9 @@ img {
 .about-me-btn:hover {
   color: #50d4ac;
 }
-
+.about-text{
+  font-family: 'Avenir', sans-serif;
+}
 /* @keyframes animate {
   0%,
   18%,
