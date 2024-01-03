@@ -317,7 +317,8 @@
           <div class="content-one" *ngIf="!isCollapsed">
             <table
               class="table-crgo table-bordered"
-              style="border: 1px solid black; width: 99%; text-align: center"
+              style="border: 1px solid black; width: 99%; text-align: center ;background-color: #fff;"
+              
             >
               <thead>
                 <tr>
@@ -522,7 +523,12 @@
                     </ul>
                   </div>
                   <div class="tab">
-                    <h4>Material Properties :</h4>
+                    <h4>Material Properties :<a
+                      class="btn1"
+                      (click)="toggleCollapse()"
+                      style="color: blue"
+                      >+Read More</a
+                    ></h4>
                     <table class="table table-bordered">
                       <tbody>
                         <tr>
@@ -563,15 +569,22 @@
                         </tr>
                       </tbody>
                     </table>
+                    
                   </div>
                 </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Get Quote</button>
+              <button type="button" class="btn btn-primary">Conatct Us</button>
+            </div>
                 <div class="content-one" *ngIf="!isCollapsed">
                   <table
                     class="table-crgo table-bordered"
                     style="
                       border: 1px solid black;
-                      width: 99%;
-                      text-align: center;
+                      width: 100%;
+                      background-color: #fff;
                     "
                   >
                     <thead>
@@ -687,13 +700,9 @@
                       </tr>
                     </tbody>
                   </table>
-                </div>
-              </div>
+               
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Get Quote</button>
-              <button type="button" class="btn btn-primary">Conatct Us</button>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -826,6 +835,7 @@
               width: 99%;
               text-align: center;
               margin: 10px 10px;
+              background-color: #fff;
             "
           >
             <thead>
@@ -1036,11 +1046,104 @@
         </div>
         <br />
         <div class="content-one" *ngIf="!isCollapsed">
-          <img
+          <!-- <img
             src="../../assets/clients/Screenshot (48).png"
             alt=""
             width="50%"
-          />
+          /> -->
+          <table class="table-crgo table-bordered" style="
+          border: 1px solid black;
+          width: 99%;
+          text-align: center;
+          margin: 10px 10px;
+          background-color: #fff;
+        ">
+    
+            <thead>
+                <tr>
+                    <th scope="col">ATTRIBUTES</th>
+                    <th scope="col" colspan="3">ACCEPTABLE LIMITS</th>
+    
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 1 -->
+                <tr>
+                    <th scope="row" rowspan="6">Outside Diameter</th>
+    
+                </tr>
+                <tr>
+                    <th scope="row">Over mm</th>
+                    <th scope="row">Upto</th>
+                    <th scope="row">Tolerance in mm</th>
+                </tr>
+                <tr>
+                    <td>40mm</td>
+                    <td>100</td>
+                    <td>+1mm</td>
+    
+                </tr>
+                <tr>
+                    <td>100mm</td>
+                    <td>300</td>
+                    <td>+2mm</td>
+    
+                </tr>
+                <tr>
+                    <td>above 300mm</td>
+                    <td>300</td>
+                    <td>+3mm</td>
+    
+                </tr>
+                <tr>
+                    <td colspan="3">ID & OD tolerances can also be achived as per customers requirement</td>
+    
+    
+                </tr>
+                <!-- 2 -->
+                <tr>
+                    <td colspan="1">Inside Diameter</td>
+                    <td colspan="3">0.0mm/+1mm</td>
+                </tr>
+                <!-- 3 -->
+                <tr>
+                    <td rowspan="2">Width/Heigth</td>
+                    <td colspan="3">Upto 200mm OD: 0. 0/+1mm</td>
+    
+                </tr>
+                <tr>
+    
+                    <td colspan="3">Over 200mm OD:0.2/+15mm</td>
+    
+                </tr>
+                <!-- 4 -->
+    
+                <tr>
+                    <td colspan="1">Sit burr</td>
+                    <td colspan="3">20 microns</td>
+                </tr>
+                <tr>
+                    <td colspan="1">weight</td>
+                    <td colspan="3">0.0/+0.2% of nominal weight</td>
+                </tr>
+                <tr>
+                    <td rowspan="5">Magnetic Characteristics</td>
+                    <td colspan="3">M3 0.27 AT/CM at 1.5T/50 Hz</td>
+                </tr>
+                <tr>
+                   
+                    <td colspan="3">M4 0.29 AT/CM at 1.5T/50 Hz</td>
+                </tr>
+                <tr>
+                   
+                    <td colspan="3">M5 0.34 AT/CM at 1.5T/50 Hz</td>
+                </tr>
+                <tr>
+                   
+                    <td colspan="3">M6 0.40 AT/CM at 1.5T/50 Hz</td>
+                </tr>
+            </tbody>
+        </table>
         </div>
       </div>
     </div>

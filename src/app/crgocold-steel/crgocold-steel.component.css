@@ -428,7 +428,7 @@ p {
     border-radius: 20%;
     color: #fff;
   }
-
+ 
   span {
     font-size: 27px;
   }
@@ -455,22 +455,19 @@ li {
   font-size: 0.8em;
   color: grey;
   margin-bottom: 15px;
-}
-td {
+}td {
   font-size: 0.8em;
   color: grey;
   margin-bottom: 15px;
-}
-.para {
+}.para {
   font-size: 0.8em;
   color: grey;
   margin-bottom: 15px;
-}
-.content-one {
-  padding: 30px 30px;
+}.content-one {
+  padding: 20px 20px;
   display: flex;
   justify-content: space-between;
-  background-color: #9cebd5;
+  background: #dcf0e9;
   border-top-right-radius: 10%;
   border-bottom-left-radius: 10%;
 }
@@ -488,7 +485,7 @@ td {
   background: linear-gradient(-45deg, #50d4ac, #070707);
 }
 .btn2 {
-  cursor: pointer;
+cursor: pointer;
   font-size: 0.7em !important;
 }
 .name-card {
@@ -496,8 +493,7 @@ td {
   padding: 0px 10px;
   color: #070707;
   font-size: 20px;
-
-  font-family: "Avenir", sans-serif;
+font-family: "Avenir", sans-serif;
 }
 .table-image {
   margin: 3px 0px;
@@ -510,16 +506,14 @@ td {
     border-radius: 0px;
     padding: 20px 20px;
   }
-  .table_img {
+.table_img {
     width: 330px;
-  }
- 
-}
+  }}
 .content-two {
   padding: 20px 20px;
   display: flex;
   justify-content: space-between;
-  background: #fbeceb;
+  background: #dcf0e9;
   border-top-left-radius: 10%;
   border-bottom-right-radius: 10%;
 }
