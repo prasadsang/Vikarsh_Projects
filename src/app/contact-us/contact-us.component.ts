@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -6,43 +6,42 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   templateUrl: './contact-us.component.html',
   styleUrls: ['./contact-us.component.css']
 })
-export class ContactUsComponent  {
-  contactForm!: FormGroup<any>;
+export class ContactUsComponent {
+  contactForm!: FormGroup;
 
+  constructor(private fb: FormBuilder) { }
 
-  constructor(private fb: FormBuilder) {}
   ngOnInit(): void {
+    this.createForm();
+  }
+
+  createForm(): void {
     this.contactForm = this.fb.group({
       first_name: ['', [Validators.required, Validators.maxLength(49)]],
       Company_name: ['', [Validators.required, Validators.maxLength(49)]],
       email: ['', [Validators.required, Validators.email, Validators.maxLength(49)]],
-      phone_input: ['', [Validators.required]],
-      message: ['', [Validators.required]],
+      phone_input: ['', [Validators.required, Validators.minLength(10)]],
+      message: ['', [Validators.required]]
     });
   }
 
-  submitForm() {
+  submitForm(): void {
     if (this.contactForm.valid) {
-      // Handle form submission logic here
-      console.log('Form submitted:', this.contactForm.value);
+      // Send the form data to the server or perform other actions
+      const formData = this.contactForm.value;
+      alert('Form submitted:');
+
+      // Optionally, you can reset the form after submission
+      this.contactForm.reset();
     } else {
-      // Mark all controls as touched to display validation messages
-      this.markFormGroupTouched(this.contactForm);
+      // Handle form validation errors
+      alert('Form has validation errors');
     }
   }
-  
-  markFormGroupTouched(formGroup: FormGroup) {
-    Object.values(formGroup.controls).forEach(control => {
-      control.markAsTouched();
-  
-      if (control instanceof FormGroup) {
-        this.markFormGroupTouched(control);
-      }
-    });
-  }
-    
-
 }
+
+
+
 
 
 

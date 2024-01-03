@@ -10,17 +10,17 @@
 
         <ul>
           <li>
-            <i class="fa fa-road"style="font-size: 20px;"></i> Gat No. 273 & 274, A/P. Dhangarwadi,
+            <i class="fa fa-road" style="font-size: 20px;"></i> Gat No. 273 & 274, A/P. Dhangarwadi,
             (Shirwal) NH-4, Tal. Khandala, Dist. Satara- 412 801, Maharashtra,
             INDIA
           </li>
           <br />
-          <li><i class="fa fa-user-circle-o" style="font-size: 20px;"></i>  Tejashree Jagnade | Sales Manager</li><br>
+          <li><i class="fa fa-user-circle-o" style="font-size: 20px;"></i> Tejashree Jagnade | Sales Manager</li><br>
           <li><i class="fa fa-phone" style="font-size: 20px;"></i> (+91) - 20 - 24452797 / 24468999</li>
           <br />
-          <li><i class="far fa-solid fa-globe-americas" style="font-size: 20px;"></i>    www.vikarsh.com</li>
+          <li><i class="far fa-solid fa-globe-americas" style="font-size: 20px;"></i> www.vikarsh.com</li>
           <br />
-          <li><i class="fa fa-envelope" style="font-size: 20px;"></i>   vikarshnano@gmail.com</li>
+          <li><i class="fa fa-envelope" style="font-size: 20px;"></i> vikarshnano@gmail.com</li>
         </ul>
         <hr style="  color: #ffffff;" />
         <div class="hero">
@@ -45,59 +45,85 @@
         <form id="contact-form" [formGroup]="contactForm" (ngSubmit)="submitForm()">
           <div class="p">
             <label for="first_name">Name</label>
-            <input type="text" formControlName="first_name" class="form-control" id="first_name" name="first_name" placeholder="Enter Your Name">
-            <div *ngIf="contactForm.get('first_name')?.hasError('required') && contactForm.get('first_name')?.touched">
-              Name is required.
+            <input type="text" formControlName="first_name" class="form-control" id="first_name" name="first_name"
+              placeholder="Enter Your Name">
+            <div style="color: red; font-size: 10px; margin: 5px;"
+              *ngIf="contactForm.get('first_name')?.hasError('required') && contactForm.get('first_name')?.touched">
+              *Name is required.
             </div>
-            <div *ngIf="contactForm.get('first_name')?.hasError('maxlength')">
-              Name cannot exceed 49 characters.
+            <div style="color: red; font-size: 10px; margin: 5px;"
+              *ngIf="contactForm.get('first_name')?.hasError('maxlength')">
+              *Name cannot exceed 49 characters.
             </div>
           </div>
-        
+
           <div class="p">
             <label for="Company_name">Company Name</label>
-            <input type="text" formControlName="Company_name" class="form-control" id="Company_name" name="Company_name" placeholder="Company Your Name">
-            <div *ngIf="contactForm.get('Company_name')?.hasError('required') && contactForm.get('Company_name')?.touched">
-              Company Name is required.
+            <input type="text" formControlName="Company_name" class="form-control" id="Company_name" name="Company_name"
+              placeholder="Company Your Name">
+            <div style="color: red; font-size: 10px; margin: 5px;"
+              *ngIf="contactForm.get('Company_name')?.hasError('required') && contactForm.get('Company_name')?.touched">
+              *Company Name is required.
             </div>
-            <div *ngIf="contactForm.get('Company_name')?.hasError('maxlength')">
-              Company Name cannot exceed 49 characters.
+            <div style="color: red; font-size: 10px; margin: 5px;"
+              *ngIf="contactForm.get('Company_name')?.hasError('maxlength')">
+              *Company Name cannot exceed 49 characters.
             </div>
           </div>
-        
+
           <div class="p">
             <label for="email_addr">Email address</label>
-            <input type="email" formControlName="email" class="form-control" id="email_addr" name="email" placeholder="name@example.com">
-            <div *ngIf="contactForm.get('email')?.hasError('required') && contactForm.get('email')?.touched">
-              Email address is required.
+            <input type="email" formControlName="email" class="form-control" id="email_addr" name="email"
+              placeholder="name@example.com">
+            <div style="color: red; font-size: 10px; margin:5px;"
+              *ngIf="contactForm.get('email')?.hasError('required') && contactForm.get('email')?.touched">
+              *Email address is required.
             </div>
-            <div *ngIf="contactForm.get('email')?.hasError('email')">
-              Please enter a valid email address.
+            <div style="color: red; font-size: 10px; margin: 5px;" *ngIf="contactForm.get('email')?.hasError('email')">
+              *Please enter a valid email address.
             </div>
-            <div *ngIf="contactForm.get('email')?.hasError('maxlength')">
-              Email address cannot exceed 49 characters.
+            <div style="color: red; font-size: 10px; margin: 5px;"
+              *ngIf="contactForm.get('email')?.hasError('maxlength')">
+              *Email address cannot exceed 49 characters.
             </div>
           </div>
-        
+
           <div class="p">
             <label for="phone_input">Phone</label>
-            <ngx-intl-tel-input [preferredCountries]="['in', 'gb']" type="Number" formControlName="phone_input" required maxlength="50"></ngx-intl-tel-input>
-            <div *ngIf="contactForm.get('phone_input')?.hasError('required') && contactForm.get('phone_input')?.touched">
-              Phone is required.
+            <ngx-intl-tel-input [preferredCountries]="['in', 'gb']" type="Number" formControlName="phone_input"   id="phone_input" name="phone_input" required
+              minlength="9"></ngx-intl-tel-input>
+            <div style="color: red; font-size: 10px; margin: 5px;"
+              *ngIf="contactForm.get('phone_input')?.hasError('required') && contactForm.get('phone_input')?.touched">
+              *Phone is required.
+            </div>
+            <div style="color: red; font-size: 10px; margin: 5px;"
+              *ngIf="contactForm.get('phone_input')?.hasError('phone_input')">
+              Please enter your mobile number.
+            </div>
+            <div style="color: red; font-size: 10px; margin: 5px;"
+              *ngIf="contactForm.get('phone_input')?.hasError('minlength')">
+              Mobile number should be 10 digit.
             </div>
           </div>
-        
-          <div  class="full">
-            <label for="message">Message</label>
-            <textarea formControlName="message" class="form-control" id="message" name="message" rows="5" placeholder="Enter Your Message"></textarea>
-            <div *ngIf="contactForm.get('message')?.hasError('required') && contactForm.get('message')?.touched">
-              Message is required.
-            </div>
-          </div>
-        
+
           <div class="full">
-            <button type="submit" class="btn btn-primary px-10 btn-lg" [disabled]="contactForm.invalid">Contact Now</button>
+            <label for="message">Message</label>
+            <textarea formControlName="message" class="form-control" id="message" name="message" rows="5"
+              placeholder="Enter Your Message"></textarea>
+            <div style="color: red; font-size: 10px; margin: 5px;"
+              *ngIf="contactForm.get('message')?.hasError('required') && contactForm.get('message')?.touched">
+              *Message is required.
+            </div>
+            <div style="color: red; font-size: 10px; margin: 5px"
+              *ngIf="contactForm.get('message')?.hasError('message')">
+              *Kindly Describe Your Requirement.
+            </div>
           </div>
+          <div class="full">
+            <button type="submit" class="btn btn-primary" >Contact
+              Now</button>
+          </div>
+
         </form>
         <!-- End #contact-form -->
       </div>
@@ -106,8 +132,9 @@
     <!-- End .wrapper -->
   </div>
   <!-- End .container -->
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d6315.293075717857!2d73.850467!3d18.516946!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDMwJzU5LjMiTiA3M8KwNTAnNTYuOCJF!5e1!3m2!1sen!2sin!4v1701163614852!5m2!1sen!2sin"
-    width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false"
-    tabindex="0"></iframe>
+
 </section>
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d6315.293075717857!2d73.850467!3d18.516946!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDMwJzU5LjMiTiA3M8KwNTAnNTYuOCJF!5e1!3m2!1sen!2sin!4v1701163614852!5m2!1sen!2sin"
+  width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false"
+  tabindex="0"></iframe>
