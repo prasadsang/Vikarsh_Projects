@@ -1,0 +1,10 @@
+body {
+    background-color: #fff; /* Light mode background color */
+    color: #000; /* Light mode text color */
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body.dark-theme {
+    background-color: #333; /* Dark mode background color */
+    color: #fff; /* Dark mode text color */
+  }

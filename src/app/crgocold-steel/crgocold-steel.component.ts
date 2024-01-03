@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, TemplateRef } from '@angular/core';
 import { CrgocoldsteeService } from '../services/crbo/crgocoldstee.service';
 import { crgo } from '../shared/models/crgo';
 
@@ -12,7 +12,7 @@ export class CrgocoldSteelComponent {
   Nanoblocks:crgo[]=[]
   showModal: boolean = false;
   isContentOneVisible: boolean = true;
-  constructor(private Ns:CrgocoldsteeService ) {}
+  constructor(private Ns:CrgocoldsteeService,) {}
   ngOnInit(): void {
 
   }
@@ -35,6 +35,11 @@ export class CrgocoldSteelComponent {
     this.isCollapsed = !this.isCollapsed;
   }
  
- 
+  isModalActive = false;
+
+  openModal() {
+    // this.isModalActive = true;
+    alert:'Welcome TO Modal '
+  }
 
 }
