@@ -42,38 +42,62 @@
         <h3 class="text-center">Contact Us</h3>
         <hr>
 
-        <form id="contact-form">
-          <p>
-            <label>Name</label>
-            <input type="text" required maxlength="49" class="form-control" id="first_name" name="first_name" placeholder="Enter Your Name">
-          </p>
-
-          <p>
-            <label>Company Name</label>
-            <input type="text" required maxlength="49" class="form-control" id="Company_name" name="last_name" placeholder="Company Your Name">
-          </p>
-
-          <p class="email">
+        <form id="contact-form" [formGroup]="contactForm" (ngSubmit)="submitForm()">
+          <div class="p">
+            <label for="first_name">Name</label>
+            <input type="text" formControlName="first_name" class="form-control" id="first_name" name="first_name" placeholder="Enter Your Name">
+            <div *ngIf="contactForm.get('first_name')?.hasError('required') && contactForm.get('first_name')?.touched">
+              Name is required.
+            </div>
+            <div *ngIf="contactForm.get('first_name')?.hasError('maxlength')">
+              Name cannot exceed 49 characters.
+            </div>
+          </div>
+        
+          <div class="p">
+            <label for="Company_name">Company Name</label>
+            <input type="text" formControlName="Company_name" class="form-control" id="Company_name" name="Company_name" placeholder="Company Your Name">
+            <div *ngIf="contactForm.get('Company_name')?.hasError('required') && contactForm.get('Company_name')?.touched">
+              Company Name is required.
+            </div>
+            <div *ngIf="contactForm.get('Company_name')?.hasError('maxlength')">
+              Company Name cannot exceed 49 characters.
+            </div>
+          </div>
+        
+          <div class="p">
             <label for="email_addr">Email address</label>
-            <input type="email" required maxlength="49" class="form-control" id="email_addr" name="email"
-              placeholder="name@example.com">
-          </p>
-
-          <p>
+            <input type="email" formControlName="email" class="form-control" id="email_addr" name="email" placeholder="name@example.com">
+            <div *ngIf="contactForm.get('email')?.hasError('required') && contactForm.get('email')?.touched">
+              Email address is required.
+            </div>
+            <div *ngIf="contactForm.get('email')?.hasError('email')">
+              Please enter a valid email address.
+            </div>
+            <div *ngIf="contactForm.get('email')?.hasError('maxlength')">
+              Email address cannot exceed 49 characters.
+            </div>
+          </div>
+        
+          <div class="p">
             <label for="phone_input">Phone</label>
-
-            <ngx-intl-tel-input [preferredCountries]="['in', 'gb']" type="Number" required
-              maxlength="50"></ngx-intl-tel-input>
-          </p>
-
-          <p class="full">
+            <ngx-intl-tel-input [preferredCountries]="['in', 'gb']" type="Number" formControlName="phone_input" required maxlength="50"></ngx-intl-tel-input>
+            <div *ngIf="contactForm.get('phone_input')?.hasError('required') && contactForm.get('phone_input')?.touched">
+              Phone is required.
+            </div>
+          </div>
+        
+          <div  class="full">
             <label for="message">Message</label>
-            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter Your Text"></textarea>
-          </p>
-
-          <p class="full">
-            <button type="submit" class="btn btn-primary px-10 btn-lg">Conact Now</button>
-          </p>
+            <textarea formControlName="message" class="form-control" id="message" name="message" rows="5" placeholder="Enter Your Message"></textarea>
+            <div *ngIf="contactForm.get('message')?.hasError('required') && contactForm.get('message')?.touched">
+              Message is required.
+            </div>
+          </div>
+        
+          <div class="full">
+            <button type="submit" class="btn btn-primary px-10 btn-lg" [disabled]="contactForm.invalid">Contact Now</button>
+          </div>
         </form>
         <!-- End #contact-form -->
       </div>

@@ -31,6 +31,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { register } from 'swiper/element/bundle';
 import { OwlModule } from 'ngx-owl-carousel';
 import { ContactCompComponent } from './contact-comp/contact-comp.component';
+import { AboutHomeContentComponent } from './about-home-content/about-home-content.component';
 
 // Step 2: Add the following line...
 register();
@@ -56,6 +57,7 @@ register();
     ClientComponent,
     ContactUsComponent,
     ContactCompComponent,
+    AboutHomeContentComponent,
 
   ],
   imports: [

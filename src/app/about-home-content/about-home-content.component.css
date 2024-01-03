@@ -1,0 +1,286 @@
+.companybrand-name{
+    color: #50d4ac;
+  }
+  
+  .montserrat {
+    font-family: 'Avenir', sans-serif;
+  }
+  
+  img {
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .container {
+    max-width: 1100px;
+   
+  
+  }
+  @media (min-width: 1200px) and (max-width: 1441px) {
+    .container {
+      max-width: 1250px;
+      padding: 0px 36px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .container {
+      padding: 0px 30px;
+    }
+  }
+  
+  @media (max-width: 479px) {
+    .container {
+      padding: 0px 30px 0px 20px;
+    }
+  }
+  
+  .about-me {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .about-me .about-me-container {
+    position: relative;
+  }
+  
+  @media (max-width: 960px) {
+    .about-me .about-me-container {
+      padding-bottom: 100px;
+    }
+  }
+  
+  .about-me .about-me-container .about-me-title {
+    font-size: 55px;
+    color: #101111;
+  
+    text-align: center;
+    font-family: 'Avenir', sans-serif;
+  }
+  
+  @media (max-width: 500px) {
+    .about-me .about-me-container .about-me-title {
+      font-size: 30px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 80px;
+      font-family: 'Avenir', sans-serif;
+    }
+  }
+  
+  .about-me-flex-container {
+    margin-top: -25px;
+    margin-left: 20px;
+    left: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @media (max-width: 960px) {
+    .about-me-flex-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 0px;
+      gap: 50px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .about-me-flex-container {
+      margin-top: -10px;
+    }
+  }
+  
+  .about-me-flex-container .about-me-image {
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+  
+  @media (max-width: 500px) {
+    .about-me-flex-container .about-me-image {
+      width: 300px;
+      height: 300px;
+      margin-left: -85px;
+    }
+  }
+  
+  .about-me-flex-container .about-me-image .back-div {
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    height: 90%;
+    left: -28px;
+  }
+  
+  .about-me-flex-container .about-me-image .black-image {
+    position: absolute;
+    left: 0 9px;
+    bottom: 10px;
+    height: 100%;
+  }
+  
+  .about-me-flex-container .about-me-image .black-image img {
+    height: 100%;
+  }
+  
+  .about-me-flex-container .about-me-image .main-image {
+    width: 91%;
+    height: 61%;
+    overflow: hidden;
+    position: absolute;
+    left: 18%;
+    bottom: -14%;
+    box-shadow: rgb(0, 0, 0) 0px 7px 50px 0px;
+  
+    animation: floatImage 4s ease-in-out infinite;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  
+  .about-me-flex-container .about-me-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    flex: 0 0 40%;
+  }
+  
+  @media (max-width: 960px) {
+    .about-me-flex-container .about-me-content {
+      flex-direction: column;
+    }
+  }
+  
+  .about-me-flex-container .about-me-content .logo {
+    max-width: 200px;
+  }
+  
+  .about-me-flex-container .about-me-content .logo img {
+    filter: drop-shadow(0 0 25px rgb(0, 0, 0));
+  }
+  
+  @media (max-width: 500px) {
+    .about-me-flex-container .about-me-content .logo img {
+      transform: rotateZ(90deg);
+    }
+  }
+  
+  .about-me-flex-container .about-me-content .text {
+    color: #0d0d0e;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  @media (max-width: 500px) {
+    .about-me-flex-container .about-me-content .text {
+      font-size: 16px;
+    }
+  }
+  
+  .mail-button {
+    display: flex;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-out;
+  }
+  
+  .mail-button a {
+    display: flex;
+  }
+  
+  .mail-button img {
+    -o-object-fit: contain;
+    object-fit: contain;
+    transition: all 0.2s ease-out;
+  }
+  
+  .mail-button2 {
+    background-color: #be4f76;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: 10px solid #be4f76;
+  }
+  
+  .mail-button2 img {
+    filter: invert(56%) sepia(42%) saturate(4795%) hue-rotate(360deg) brightness(103%) contrast(105%);
+  }
+  
+  .mail-button2:hover {
+    background-color: #ff7a01;
+    border: 10px solid #ff7a01;
+  }
+  
+  .mail-button2:hover img {
+    filter: unset;
+    transform: scale(1.5);
+  }
+  
+  .portfolio-link {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .portfolio-link a {
+    text-decoration: none;
+    color: white;
+  
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  @keyframes floatImage {
+    0% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-2.3rem);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .namecompany {
+    color: #83b9f0;
+  }
+  
+  .hero-text h1 {
+    animation: animate 5s linear infinite;
+  }
+  
+  .about-us-btn {
+    padding: 10px 80px;
+    background: linear-gradient(-45deg, #50d4ac, #070707);
+    border-radius: 20px;
+    font-weight: 100;
+    color: #fff;
+    margin-left: 90px;
+    box-shadow: 10px 10px 10px rgb(124, 120, 120);
+  }
+  
+  .about-me-btn:hover {
+    color: #50d4ac;
+  }
+  .about-text{
+    font-family: 'Avenir', sans-serif;
+  }
+  .show-less {
+    height: 4rem;
+    overflow: hidden;
+    padding: 1rem;
+  }
+  
+  
