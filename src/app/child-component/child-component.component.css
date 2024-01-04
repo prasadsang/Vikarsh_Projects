@@ -1,0 +1,68 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+  }
+  
+  .container-box {
+    position: absolute;
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+  }
+  
+  .btn-body {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .btn-primary {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  /* Media Query for smaller screens */
+  @media (max-width: 768px) {
+    .container-box {
+      width: 90%;
+      max-width: none;
+    }
+  
+    .btn-primary {
+      max-width: none;
+    }
+  }
+  .close {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    border: 1px solid #999; /* Add border for visibility */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  h6 {
+    font-size: 16px; /* Adjust the font size as needed */
+    font-weight: bolder;
+  }
+  /* Media Query for even smaller screens, e.g., mobile */
+  @media (max-width: 480px) {
+    .container-box {
+      width: 95%;
+    }
+  
+    .close {
+      width: 20px; /* Adjust the size as needed */
+      height: 20px; /* Adjust the size as needed */
+    }
+  
+    h6 {
+      font-size: 16px; /* Adjust the font size as needed */
+    }
+  }

@@ -1,4 +1,32 @@
-<div *ngIf="isModalActive"> <!-- Use ngIf to conditionally render the modal -->
-    <!-- Your modal content here -->
+<div *ngIf="isFormOpen!">
+  <div class="modal1" class="main-container">
 
+    <div class="modal fade " class="container-box">
+      <div class="button-div">
+
+        <button type="button" class="close" (click)="closeModal()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="text-modal">
+
+        <h6> Vikarsh Nano Technology & Alloys Pvt. Ltd </h6>
+        <p class="text-center">Contact Details</p>
+      </div><hr>
+      <div class="d-flex p-2 bd-highlight">
+
+        <form action="">
+          <label>Phone Number:</label>
+          <ngx-intl-tel-input [preferredCountries]="['in', 'gb']" [enablePlaceholder]="true"></ngx-intl-tel-input>
+
+
+          <div class="btn-body">
+            <button type="button" class="btn btn-primary">Submit</button><br>
+
+          </div>
+        </form>
+
+      </div>
+    </div>
   </div>
+</div>

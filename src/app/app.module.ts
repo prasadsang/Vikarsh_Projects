@@ -34,6 +34,7 @@ import { ContactCompComponent } from './contact-comp/contact-comp.component';
 import { AboutHomeContentComponent } from './about-home-content/about-home-content.component';
 import { ChildComponentComponent } from './child-component/child-component.component';
 
+
 // Step 2: Add the following line...
 register();
 @NgModule({
@@ -60,7 +61,7 @@ register();
     ContactCompComponent,
     AboutHomeContentComponent,
     ChildComponentComponent,
-
+   
   ],
   imports: [
 

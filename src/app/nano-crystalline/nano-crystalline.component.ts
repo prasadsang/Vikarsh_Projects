@@ -2,6 +2,8 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Transformers } from '../shared/models/meritele';
 import { NanoblockService } from '../services/Copper-Materical/nanoblock.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ModalServicesService } from '../services/modal/modal-services.service';
+
 
 @Component({
   selector: 'app-nano-crystalline',
@@ -13,7 +15,7 @@ export class NanoCrystallineComponent implements OnInit {
   hideNavbar = false;
   tabContent: any;
   downloadCount: number = 0;
-  constructor(private Ns: NanoblockService) {}
+  constructor(private Ns: NanoblockService,private formCommunicationService:  ModalServicesService) {}
   ngOnInit(): void {}
   isCollapsed = true;
 
@@ -42,5 +44,11 @@ export class NanoCrystallineComponent implements OnInit {
   downloadFile() {
     // Implement your download logic here
     this.downloadCount++;
+  }
+
+  
+
+  openForm() {
+    this.formCommunicationService['openForm']();
   }
 }
