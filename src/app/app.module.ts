@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -33,7 +33,7 @@ import { OwlModule } from 'ngx-owl-carousel';
 import { ContactCompComponent } from './contact-comp/contact-comp.component';
 import { AboutHomeContentComponent } from './about-home-content/about-home-content.component';
 import { ChildComponentComponent } from './child-component/child-component.component';
-
+import { FormsModule } from '@angular/forms';
 
 // Step 2: Add the following line...
 register();
@@ -53,7 +53,7 @@ register();
     NanoCrystallineComponent,
     GalleryComponent,
     CrgocoldSteelComponent,
-   
+
     MaterialPropertiesComponent,
     RAWMATERIALComponent,
     ClientComponent,
@@ -61,7 +61,7 @@ register();
     ContactCompComponent,
     AboutHomeContentComponent,
     ChildComponentComponent,
-   
+
   ],
   imports: [
 
@@ -73,9 +73,10 @@ register();
     BrowserAnimationsModule,
     MatSlideToggleModule,
     MatButtonModule,
- 
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

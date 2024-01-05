@@ -1,7 +1,7 @@
 <div *ngIf="isFormOpen!">
   <div class="modal1" class="main-container">
 
-    <div class="modal fade " class="container-box">
+    <div class="modal fade animate__bounce" class="container-box">
       <div class="button-div">
 
         <button type="button" class="close" (click)="closeModal()">
@@ -10,22 +10,31 @@
       </div>
       <div class="text-modal">
 
-        <h6> Vikarsh Nano Technology & Alloys Pvt. Ltd </h6>
+        <h6  class="animate__animated animate__bounce"> Vikarsh Nano Technology & Alloys Pvt. Ltd </h6>
         <p class="text-center">Contact Details</p>
       </div><hr>
       <div class="d-flex p-2 bd-highlight">
 
-        <form action="">
-          <label>Phone Number:</label>
-          <ngx-intl-tel-input [preferredCountries]="['in', 'gb']" [enablePlaceholder]="true"></ngx-intl-tel-input>
-
-
-          <div class="btn-body">
-            <button type="button" class="btn btn-primary">Submit</button><br>
-
+        <form #f="ngForm"  (ngSubmit)="submitForm(f)">
+          <label for="phoneNumber">Phone Number:</label>
+          <ngx-intl-tel-input
+            formControlName="phoneNumber"
+            [preferredCountries]="['in', 'gb']"
+            [enablePlaceholder]="true"
+        name="phone"
+        ngModel
+          ></ngx-intl-tel-input>
+        
+          <!-- Display validation errors -->
+          <div *ngIf="yourForm.get('phoneNumber')?.hasError('required')">
+            *Phone Number is required.
           </div>
+        
+          <div class="btn-body">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+          
         </form>
-
       </div>
     </div>
   </div>
